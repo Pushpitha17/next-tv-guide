@@ -1,0 +1,33 @@
+.startScreen {
+    background-image: url('../public/Images/Static/start_desktop.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+}
+
+.Nextimg {
+    position: absolute;
+    height : 5em;
+    top : calc(50% - 2.5em);
+    right : 15%;
+    transition: 0.2s;
+}
+
+.Nextimg:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px){
+
+    .startScreen{
+        background-image: url('../public/Images/Static/start_mobile.jpg');
+        position: relative;
+    }
+
+    .Nextimg{
+        right:calc(50% - 27px);
+        height :2.5em;
+        top:70%;
+    }
+}

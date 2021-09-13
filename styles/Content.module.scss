@@ -1,0 +1,272 @@
+.container {
+    height: calc(100% - 4em);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+    background-image: url('/Images/Static/background.jpg');
+}
+
+.visuals {
+	position: relative;
+	height: calc(100% - 10rem);
+	width: 100vw;
+}
+
+.tvAndRemoteContainer{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+	padding: 1.5em auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tvWithRemote{
+    margin-left: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tv {
+    height: 80%;
+    width: auto;
+    min-width: 75%;
+}
+
+.remoteContainer {
+    width: 25%;
+    height: 100%;
+    margin-left: 2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.remote {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tvOnlyContainer{
+    width: 100vw;
+    padding: 1.5rem auto;
+    height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.onlyTv{
+    display: block;
+    height: 90%;
+}
+
+
+.textContainer{
+    background-color: black;
+    height: 10rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    width: 64%;
+    margin: auto auto;
+    font-size: 1.3rem;
+}
+
+.controls {
+	width: 100%;
+	position: absolute;
+	height: 8em;
+	bottom: 0;
+}
+
+.controlsContainer{
+    position: relative;
+	width: 88%;
+	height: 8em;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.prevBtn {
+	position: absolute;
+	z-index: 2;
+	left: 6%;
+	height: 4em;
+}
+
+.nextBtn {
+	position: absolute;
+	z-index: 2;
+	right: 6%;
+	height: 4em;
+}
+
+.prevBtn:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.nextBtn:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.arrowImg{
+    height: 100%;
+}
+
+@media (max-width: 968px) {
+    .container{
+        height: 100%;
+        display: block;
+    }
+
+    .visuals{
+        height: calc(100% - 13rem); ;
+    }
+
+    .tvAndRemoteContainer {
+        height: 100%;
+        width: 100%;
+        padding: 5rem 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .tvWithRemote{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .tv {
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 35vh;
+        height: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .tvOnlyContainer{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin:auto 0;       
+    }
+    
+    .onlyTv{
+        padding-top: 3rem;
+        display: inline-block;
+        width: 98%;
+        height: auto;
+    }
+    
+
+
+    .remoteContainer {
+        width: 100%;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .remote {
+        width: 15vh;
+        height: auto;
+    }
+
+    .controls {
+        width: 100%;
+        position: absolute;
+        height: 12em;
+        bottom: 0;
+    }
+
+    .controlsContainer{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    } 
+
+    .prevBtn {
+        left: 6%;
+        position: absolute;
+        bottom: 7rem;
+        height: 3rem;
+    }
+    
+    .nextBtn {
+        right: 6%;
+        height: 3rem;
+        position: absolute;
+        bottom: 7rem;
+    }
+
+    .text {
+        width: 64%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px){
+
+    .visuals{
+        height: calc(100% - 15rem); ;
+    }
+
+    .textContainer{
+        height: 15rem;
+        display: block;
+    }
+
+    .text {
+        width: 98%;
+        font-size: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .controls {
+        width: 100%;
+        position: absolute;
+        height: 5em;
+        bottom: 0;
+    }
+    
+    .controlsContainer{
+        position: relative;
+        width: 88%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .prevBtn {
+        left: 10%;
+        height: 1.5rem;
+        bottom: 3.7rem;
+    }
+    
+    .nextBtn {
+        right: 10%;
+        height: 1.5rem;
+        bottom: 3.7rem;
+    }
+}

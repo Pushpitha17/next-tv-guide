@@ -1,0 +1,122 @@
+.header {
+    height: 4em;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.HomeBtn {
+    position: absolute;
+    height: 5em;
+    left: 6%;
+    bottom : -2.5em;
+    z-index: 99;
+    transition: 0.2s;
+}
+
+.HomeBtn:hover {
+    transform: scale(1.1);
+}
+
+.Homeimg {
+    height: 100%;
+}
+
+.langControls{
+    display: flex;
+    margin-right: 2em;
+    align-items: center;
+}
+
+.langBtn{
+    color: white;
+    margin-left:1em;
+    padding: 3px 20px;
+    transition: 0.2s;
+    border-radius: 5%;
+}
+
+.homeLink{
+    display: none;
+}
+
+.langBtn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+    .showMenuSvg {
+        display: none;
+    }
+
+    .hideCloseSvg {
+        display: none;
+    }
+
+    .hideMenuSvg{
+        display: none;
+    }
+
+
+@media (max-width: 600px) {
+  .Homeimg{
+      display: none;
+  }
+
+    .header {
+        background-color: black;
+        width: 14rem;
+        height: 100vh;
+        position: absolute;
+        display: block;
+        left:-14rem;
+        transition: 0.3s ease-out;
+        z-index: 3;
+    }
+
+    .showCloseSvg{
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        z-index: 5;
+        display: block;
+    }
+
+    .showMenuSvg{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        z-index: 5;
+    }
+
+
+
+    .langControls{
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .langBtn {
+            text-align: left;
+            margin: 1.2rem;
+            margin-left: 2rem;
+        }
+
+        .homeLink{
+            display: block;
+            padding: 3px 20px;
+            margin: 1.2rem;
+            margin-left: 2rem;
+            margin-bottom: 2.5rem;
+            color: white;
+        }
+
+    }
+
+}
