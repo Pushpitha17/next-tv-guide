@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../styles/header.module.scss'
-import HomeImg from '../public/Images/static/homebtn.png'
 
 export const Header = ({lang , setLanguage}) => {
 
@@ -15,6 +14,11 @@ export const Header = ({lang , setLanguage}) => {
 	
 	const activeMenuStyles = {
 		left : "0"
+	}
+
+	const handleChangeLang = (lang) => {
+		setOpenMenu(false)
+		setLanguage(lang)
 	}
 
     return (
@@ -40,13 +44,13 @@ export const Header = ({lang , setLanguage}) => {
 				<Link href="/" >
 					<div className={styles.homeLink}>Home</div>
 				</Link>
-				<div className={styles.langBtn} onClick={() => setLanguage('english')} style={lang === 'english' ? activeLangStyles : null}>
+				<div className={styles.langBtn} onClick={() => handleChangeLang('english')} style={lang === 'english' ? activeLangStyles : null}>
 					English
 				</div>
-				<div className={styles.langBtn}  onClick={() => setLanguage('sinhala')} style={lang === 'sinhala' ? activeLangStyles : null}>
+				<div className={styles.langBtn}  onClick={() => handleChangeLang('sinhala')} style={lang === 'sinhala' ? activeLangStyles : null}>
 					Sinhala
 				</div>
-				<div className={styles.langBtn}  onClick={() => setLanguage('tamil')} style={lang === 'tamil' ? activeLangStyles : null}>
+				<div className={styles.langBtn}  onClick={() => handleChangeLang('tamil')} style={lang === 'tamil' ? activeLangStyles : null}>
 					Tamil
 				</div>
 			</div>

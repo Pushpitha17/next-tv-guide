@@ -1,6 +1,6 @@
 import styles from '../styles/Content.module.scss'
 import data from '../public/PurchaseMovieInstructions'
-import { useState, useEffect , useRef} from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 
@@ -34,8 +34,6 @@ function Content({lang}) {
 
     const [[page, direction], setPage] = useState([0, 0]);
 
-    const [loading , setLoading] = useState(true)
-
     const contentIndex = wrap(0, data.length, page);
 
     const paginate = (newDirection) => {
@@ -63,10 +61,6 @@ function Content({lang}) {
         }
     }, [page])
 
-
-
-
-    console.log(loading)
     
     return (
         <div className={styles.container}>
