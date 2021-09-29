@@ -37,7 +37,6 @@ function Content({lang}) {
     const contentIndex = wrap(0, data.length, page);
 
     const paginate = (newDirection) => {
-        setLoading(true)
         setPage([page + newDirection, newDirection]);
     };
 
