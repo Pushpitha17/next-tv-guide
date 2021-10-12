@@ -119,22 +119,24 @@
 
     }
 
+    @media (max-resolution: 2.5dppx) { 
+
+        .showCloseSvg{
+            top: 1rem;
+            left: 1rem;
+            width: 30px;
+            height: 30px;
+        }
+    
+        .showMenuSvg{
+            top: 1rem;
+            left: 1rem;
+            width: 30px;
+            height: 30px;
+        }
+    
+    }
+    
+
 }
 
-@media (max-resolution: 2.5dppx) { 
-
-    .showCloseSvg{
-        top: 1rem;
-        left: 1rem;
-        width: 30px;
-        height: 30px;
-    }
-
-    .showMenuSvg{
-        top: 1rem;
-        left: 1rem;
-        width: 30px;
-        height: 30px;
-    }
-
-}
