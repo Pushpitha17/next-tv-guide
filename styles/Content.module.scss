@@ -271,3 +271,27 @@
         bottom: 3.7rem;
     }
 }
+
+
+@media (max-resolution: 2.5dppx) { 
+    .tvAndRemoteContainer {
+      padding: 3.5rem 0;
+    }
+
+    .tvWithRemote{
+        width: 96%;
+        display: block;
+        margin-left: 0;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .remote {
+        width: 13vh;
+        height: auto;
+    }
+
+    .tvOnlyContainer{
+        padding-top: 3.5rem;
+    }
+}

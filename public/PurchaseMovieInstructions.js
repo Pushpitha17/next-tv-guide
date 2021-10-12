@@ -28,7 +28,7 @@ const purchaseMovie = [
 				'Select the ‘Movies’ option using the left/right arrow buttons.',
 			tamil:
 				'மெனு உருப்படிகளின் நடுவில் முன்னிலைப்படுத்தப்பட்டுள்ளது தற்போது கவனம் செலுத்திய மெனு உருப்படி.',
-			sinhala: `වම සහ දකුණු Arrow keys භාවිතා කර Movies ගොනුව තෝරාගන්න`,
+			sinhala: `වම සහ දකුණු Arrow keys භාවිතා කර Movies ගොනුව තෝරාගන්න.`,
 		},
 	},
 	{

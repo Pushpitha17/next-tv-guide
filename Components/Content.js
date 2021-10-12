@@ -128,6 +128,17 @@ function Content({lang}) {
                     
                 </div>             
             </div>
+            {data.map((item, index) => (
+                <div style={{height: '0' , width: '0' }} key={index}>
+                    <img src={item.tv}></img>
+                    {item.remote && 
+                        <img
+                            sizes="(max-width:1200px) 200px, 1168px"
+                            srcSet={`${item.remote.mobile} 200w, ${item.remote.mobile} 500w, ${item.remote.desktop} 1168w`}
+                        />
+                    }
+                </div>
+            ))}
         </div>
     )
 }
